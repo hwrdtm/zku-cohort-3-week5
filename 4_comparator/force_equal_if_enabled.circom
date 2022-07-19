@@ -1,3 +1,4 @@
+pragma circom 2.0.3;
 include "iszero.circom";
 
 template ForceEqualIfEnabled() {
@@ -11,4 +12,4 @@ template ForceEqualIfEnabled() {
     (1 - isz.out)*enabled === 0;
 }
 
-component main = ForceEqualIfEnabled()
+component main = ForceEqualIfEnabled();
